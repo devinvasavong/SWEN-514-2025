@@ -64,7 +64,7 @@ resource "aws_instance" "my_server" {
 
 terraform {
   backend "s3" {
-    bucket = "rit-terraform"
+    bucket = "dv-rit-terraform"
     key = "wp/terraform.tfstate"
     region = "us-east-1"
   }
