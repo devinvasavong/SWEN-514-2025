@@ -61,3 +61,11 @@ resource "aws_instance" "my_server" {
 
   tags = { Name = "my ec2" }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "dv-rit-terraform"
+    key = "terraform.tfstate"
+    region = "us-east-1"
+  }
+}
