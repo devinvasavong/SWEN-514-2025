@@ -1,4 +1,4 @@
-# .github/workflows/terraform.yaml
+name: "Github Actions Activity"
 
 on:
   workflow_dispatch:
